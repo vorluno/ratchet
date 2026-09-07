@@ -2,18 +2,45 @@
   "name": "@vorluno/ratchet",
   "version": "0.1.0",
   "description": "Per-capability autonomy for AI agents: caps in their own unit, and refusals you can act on.",
-  "keywords": ["ai-agents", "autonomy", "guardrails", "policy", "llm", "agent-safety", "typescript"],
+  "keywords": [
+    "ai-agents",
+    "autonomy",
+    "guardrails",
+    "policy",
+    "llm",
+    "agent-safety",
+    "typescript"
+  ],
   "homepage": "https://github.com/vorluno/ratchet#readme",
-  "repository": { "type": "git", "url": "git+https://github.com/vorluno/ratchet.git" },
-  "bugs": { "url": "https://github.com/vorluno/ratchet/issues" },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vorluno/ratchet.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vorluno/ratchet/issues"
+  },
   "author": "Vorluno (https://vorluno.dev)",
   "license": "Apache-2.0",
   "type": "module",
   "main": "./src/policy-contract.ts",
   "types": "./src/policy-contract.ts",
-  "exports": { ".": "./src/policy-contract.ts" },
-  "files": ["src", "README.md", "LICENSE", "NOTICE"],
-  "publishConfig": { "access": "public" },
-  "scripts": { "check-types": "tsc --noEmit" },
-  "devDependencies": { "typescript": "^5" }
+  "exports": {
+    ".": "./src/policy-contract.ts"
+  },
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE",
+    "NOTICE"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "check-types": "tsc --noEmit",
+    "prepublishOnly": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "typescript": "^5"
+  }
 }
